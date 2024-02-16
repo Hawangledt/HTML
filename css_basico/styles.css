@@ -1,0 +1,26 @@
+.registro {
+    width: 80%;    
+    /* Define a largura do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona um espaçamento interno ao redor do contêiner */
+    border: 1px solid #ddd; /* Adiciona uma borda ao contêiner */
+}
+
+
+h1 {
+    color: #333; /* Define a cor do texto */
+    font-size: 24px; /* Define o tamanho da fonte */
+}
+
+p {
+    color: #666; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    border: 2px   solid #666;
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+}

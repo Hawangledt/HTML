@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Preço com Taxa</title>
+    </head>
+    <body>
+        <h1>Calculadora de Preço com Taxa</h1>
+
+        <p>Informe o preço e a taxa:</p>
+        <input type="number" id="preco" placeholder="Preço">
+        <input type="number" id="taxa" placeholder="Taxa (%)">
+        <button onclick="calcularValorFinal()">Calcular</button>
+
+        <p id="resultado"></p>
+
+        <script>
+            function calcularValorFinal() {
+                // Obter os valores do preço e da taxa do HTML
+                var preco = parseFloat(document.getElementById("preco").value);
+                var taxa = parseFloat(document.getElementById("taxa").value);
+
+                // Calcular o valor final com a taxa
+                var valorFinal = preco + (preco * (taxa / 100));
+
+                // Exibir o resultado no HTML
+                document.getElementById("resultado").innerText = "Valor final: R$" + valorFinal.toFixed(2);
+            }
+        </script>
+    </body>
+</html>
