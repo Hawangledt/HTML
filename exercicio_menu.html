@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Menu do Restaurante da Semana 03</title>
+        <style>
+            .Menu {
+                display: flex;             
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 1000px;
+                background-color: rgb(245, 198, 135);
+            }
+
+            .ItemEsquerda {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                width: 800px;
+                background-color: rgb(135, 234, 245);
+            }
+
+            .ItemDireita {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                align-items: center;
+                justify-content: right;
+                width: 800px;
+                background-color: rgb(135, 234, 245);
+            }
+
+            .Titulo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(135, 153, 245);
+                width: 800px;
+            }
+
+            .Estrela img{
+                width: 50px;
+                height: 50px;
+            }
+
+            .MenuTexto {
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Pratos {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Menu">
+            <div class="Titulo">
+                <div class="Estrela"> 
+                    <img src="pngwing.png" alt="Esse sou eu" title="Perfil" /> 
+                </div>
+                <div class="MenuTexto">
+                    <h2>Restaurante</h2>
+                    <h1>Menu</h1>
+                </div>
+                <div class="Estrela"> 
+                    <img src="pngwing.png" alt="Esse sou eu" title="Perfil" /> 
+                </div>
+            </div>
+            <h2>Prato Principal</h2>
+            <div class="ItemEsquerda">
+                <div class="Pratos">
+                    <img src="https://via.placeholder.com/300" alt="Foto do Prato" title="Prato" />
+                </div>
+                <div class="DescricaoDosPratos">
+                    <ul>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Entradas</h2>
+            <div class="ItemDireita">
+                <div class="DescricaoDosPratos">
+                    <ul>
+                        <li>Prato 1 ..................... $00,00</li>
+                        <li>Prato 2 ..................... $00,00</li>
+                        <li>Prato 3 ..................... $00,00</li>
+                    </ul>
+                </div>
+                <div class="Pratos">
+                    <img src="https://via.placeholder.com/300" alt="Foto do Prato" title="Prato" />
+                </div>
+            </div>
+
+            <h2>Sobremesas</h2>
+            <div class="ItemEsquerda">
+                <div class="Pratos">
+                    <img src="https://via.placeholder.com/300" alt="Foto do Prato" title="Prato" />
+                </div>
+                <div class="DescricaoDosPratos">
+                    <ul>
+                        <li>Prato 1 ..................... $00,00</li>
+                        <li>Prato 2 ..................... $00,00</li>
+                        <li>Prato 3 ..................... $00,00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Bebidas</h2>
+            <div class="ItemDireita">
+                <div class="DescricaoDosPratos">
+                    <ul>
+                        <li>Prato 1 ..................... $00,00</li>
+                        <li>Prato 2 ..................... $00,00</li>
+                        <li>Prato 3 ..................... $00,00</li>
+                    </ul>
+                </div>
+                <div class="Pratos">
+                    <img src="https://via.placeholder.com/300" alt="Foto do Prato" title="Prato" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
