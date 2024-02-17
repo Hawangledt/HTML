@@ -4,13 +4,23 @@
         <meta charset="UTF-8"/>
         <title>Menu do Restaurante da Semana 03</title>
         <style>
+            body {
+                color: burlywood;
+            }
+
             .Menu {
                 display: flex;             
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 width: 1000px;
-                background-color: rgb(245, 198, 135);
+                background-color: rgb(20, 20, 20);
+                border-width: 20px; /* Largura da borda (importante para o gradiente) */
+                border-style: solid;
+                border-image: linear-gradient(to right, #ff8c00, #dbbc0cd2); /* Gradiente */
+                border-image-slice: 1; /* Permite que o gradiente seja aplicado na sua totalidade */
+                border-radius: 2px; /* Arredondamento das bordas */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ao redor do menu */
             }
 
             .ItemEsquerda {
@@ -18,7 +28,6 @@
                 align-items: center;
                 justify-content: left;
                 width: 800px;
-                background-color: rgb(135, 234, 245);
             }
 
             .ItemDireita {
@@ -27,16 +36,23 @@
                 align-items: center;
                 justify-content: right;
                 width: 800px;
-                background-color: rgb(135, 234, 245);
             }
 
             .Titulo {
                 display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                width: 800px;
+            }
+
+            /* .Titulo {
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
                 align-items: center;
                 justify-content: center;
                 background-color: rgb(135, 153, 245);
                 width: 800px;
-            }
+            } */
 
             .Estrela img{
                 width: 50px;
@@ -87,9 +103,9 @@
             <div class="ItemDireita">
                 <div class="DescricaoDosPratos">
                     <ul>
-                        <li>Prato 1 ..................... $00,00</li>
-                        <li>Prato 2 ..................... $00,00</li>
-                        <li>Prato 3 ..................... $00,00</li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>    
                     </ul>
                 </div>
                 <div class="Pratos">
@@ -104,9 +120,9 @@
                 </div>
                 <div class="DescricaoDosPratos">
                     <ul>
-                        <li>Prato 1 ..................... $00,00</li>
-                        <li>Prato 2 ..................... $00,00</li>
-                        <li>Prato 3 ..................... $00,00</li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>    
                     </ul>
                 </div>
             </div>
@@ -115,9 +131,9 @@
             <div class="ItemDireita">
                 <div class="DescricaoDosPratos">
                     <ul>
-                        <li>Prato 1 ..................... $00,00</li>
-                        <li>Prato 2 ..................... $00,00</li>
-                        <li>Prato 3 ..................... $00,00</li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
+                        <li><h2>Prato x .............................. $00,00<h2></li>
                     </ul>
                 </div>
                 <div class="Pratos">
