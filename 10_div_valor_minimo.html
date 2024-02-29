@@ -9,10 +9,22 @@
             background-color: lightgray;
             padding: 20px;
             border: 1px solid gray;
+            display: flex;
+            align-items: center;
         }
 
         .box {
-            background-color: lightblue;
+            background-color: rgb(182, 173, 230);
+            display: flex;
+            padding: 10px;
+            margin-bottom: 10px;
+            min-width: 200px; /* Define uma largura mínima de 200 pixels */
+            min-height: 100px; /* Define uma altura mínima de 100 pixels */
+            max-width: 600px;
+        }
+
+        .item {
+            background-color: rgb(183, 230, 173);
             padding: 10px;
             margin-bottom: 10px;
             min-width: 200px; /* Define uma largura mínima de 200 pixels */
@@ -27,10 +39,25 @@
         <h2>Título da Página</h2>
         <div class="box">
             <p>Este é o conteúdo da primeira caixa.</p>
+            <div class="item">
+                <p>Exemplo</p>
+            </div>
+            <div class="item">
+                <p>Exemplo</p>
+            </div>
         </div>
         <div class="box">
-            <p>Este é o conteúdo da segunda caixa.</p>
+            <p>Este é o conteúdo da primeira caixa.</p>
+            <div class="item">
+                <p>Exemplo</p>
+            </div>
+            <div class="item">
+                <p>Exemplo</p>
+            </div>
         </div>
+        <!-- <div class="box">
+            <p>Este é o conteúdo da segunda caixa.</p>
+        </div> -->
     </div>
 </body>
 </html>

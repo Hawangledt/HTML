@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação do DOM</title>
+</head>
+<body>
+  <script>
+    // Criar um novo elemento <p>
+    let paragrafo = document.createElement("p");
+    
+    // Adicionar texto ao parágrafo
+    paragrafo.textContent = "Olá, mundo!";
+    
+    // Adicionar o parágrafo ao body
+    document.body.appendChild(paragrafo);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executar JavaScript</title>
+</head>
+<body>
+    <script>
+        // Cole aqui o código JavaScript
+        // Solicita ao usuário que insira seu nome
+        var nome = parseFloat(window.prompt("Por favor, insira seu nome:"));
+
+        // Verifica se o usuário inseriu um nome
+        if (nome !== null && nome !== "") {
+            // Exibe uma saudação personalizada
+            window.alert("Olá, " + nome + "! Bem-vindo!");
+        } else {
+            // Caso o usuário não tenha inserido um nome válido
+            window.alert("Você não inseriu um nome válido. Por favor, tente novamente.");
+        }
+    </script>
+</body>
+
+</html>

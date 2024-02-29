@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executar JavaScript</title>
+</head>
+<body>
+    <script>
+        // Solicita ao usuário que insira uma palavra
+        let palavra = window.prompt("Digite uma palavra:");
+
+        // Converte a palavra para letras minúsculas
+        palavra = palavra.toLowerCase();
+
+        // Cria uma lista (array) contendo os caracteres da palavra
+        let caracteres = palavra.split("");
+
+        // Inverte a lista de caracteres
+        let caracteresInvertidos = caracteres.slice().reverse();
+
+        // Verifica se a palavra é um palíndromo
+        if (caracteres.join("") === caracteresInvertidos.join("")) {
+            console.log('A palavra "' + palavra + '" é um palíndromo.');
+        } else {
+            console.log('A palavra "' + palavra + '" não é um palíndromo.');
+        }
+    </script>
+</body>
+
+</html>

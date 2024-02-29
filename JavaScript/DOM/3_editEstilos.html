@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação do DOM</title>
+  <style>
+    .destaque {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<p id="paragrafo">Olá, mundo!</p>
+
+<button onclick="destacarParagrafo()">Destacar Parágrafo</button>
+
+<script>
+  function destacarParagrafo() {
+    // Obter o parágrafo pelo ID
+    let paragrafo = document.getElementById("paragrafo");
+    
+    // Adicionar a classe "destaque" ao parágrafo
+    paragrafo.classList.add("destaque");
+  }
+</script>
+
+</body>
+</html>

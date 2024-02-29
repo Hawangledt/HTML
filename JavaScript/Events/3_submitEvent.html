@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Evento de Formulário</title>
+</head>
+<body>
+
+<form id="formulario">
+  <input type="text" name="nome" placeholder="Digite seu nome">
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  // Adiciona um ouvinte de evento de submit ao formulário
+  document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+    let nome = event.target.nome.value;
+    alert('Olá, ' + nome + '! Seu formulário foi enviado.');
+  });
+</script>
+
+</body>
+</html>

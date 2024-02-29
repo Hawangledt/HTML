@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Evento de Teclado</title>
+</head>
+<body>
+
+<input type="text" id="input" placeholder="Pressione uma tecla">
+
+<script>
+  // Adiciona um ouvinte de evento de teclado ao input
+  document.getElementById('input').addEventListener('keydown', function(event) {
+    alert('Você pressionou a tecla: ' + event.key);
+  });
+</script>
+
+</body>
+</html>
