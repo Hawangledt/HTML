@@ -1,38 +1,51 @@
 
 function calcularMediaDaTurma(listaDeAlunos){
-    for ( aluno in listaDeAlunos ) {
-        calcularMedia(aluno.notas)
+    let somatorioDeNotas = 0
+    for ( a in listaDeAlunos ) {
+        aluno = listaDeAlunos[a]
+        let mediaDoAluno = calcularMedia(aluno.notas)
+        console.log("Media do Aluno " + aluno.nome + " é " + mediaDoAluno)
+        somatorioDeNotas += mediaDoAluno
     }
+    let mediaDaTurma = somatorioDeNotas/listaDeAlunos.length
+    return mediaDaTurma
 }
 
 function calcularMedia(listaNumeros) {
-    
+    console.log(listaNumeros)
+    let soma = 0
+    for (numero in listaNumeros) {
+        soma += listaNumeros[numero]
+    }
+
+    let media = soma / listaNumeros.length
+    return media
 }
 
 // Como pedir pro usuário adicionar valores
 
-var listadeAlunos = []
+var listaDeAlunos = []
 
-var novoAluno//true or false
+var novoAluno //true or false
 
 novoAluno = true
 
 while (novoAluno) {
     var nomeDoAluno = window.prompt("Qual o nome do aluno?")
-    var numeroDeNotas = window.prompt("Quantas notas o aluno tem?") 
+    var numeroDeNotas = parseInt(window.prompt("Quantas notas o aluno tem?"))
     var notas = []
     for (let i = 0; i < numeroDeNotas; i++) {
-        var nota = window.prompt("Insira a nota " + i+1 )
+        var nota = parseFloat(window.prompt("Insira a nota " + (i + 1) ))
         notas.push(nota)
     }
 
-    listadeAlunos.push({ nome: nomeDoAluno, notas: notas })
+    listaDeAlunos.push({ nome: nomeDoAluno, notas: notas })
 
     novoAluno = window.confirm("Adicionar nota para mais um aluno?")
     
 }
 
-window.alert("A média dos alunos é ", carculaMediaDaTurma(listadeAlunos))
+window.alert("A média dos alunos é " + calcularMediaDaTurma(listaDeAlunos))
 
 
 /*
