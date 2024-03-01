@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular Média de Alunos</title>
+</head>
+<body>
+
+<script>
+    // Função para calcular a média das notas
+    function calcularMedia(notas) {
+        const totalNotas = notas.length;
+        const somaNotas = notas.reduce((acc, nota) => acc + nota, 0);
+        const media = somaNotas / totalNotas;
+        return media;
+    }
+
+    // Função para classificar o aluno com base na média
+    function classificarAluno(media) {
+        if (media >= 7) {
+            return "Aprovado";
+        } else if (media >= 5) {
+            return "Recuperação";
+        } else {
+            return "Reprovado";
+        }
+    }
+
+    // Array para armazenar os alunos
+    const alunos = [];
+
+    // Solicitar ao usuário que insira as notas dos alunos
+    const quantidadeAlunos = parseInt(prompt("Quantos alunos deseja inserir?"));
+
+    for (let i = 0; i < quantidadeAlunos; i++) {
+        const nomeAluno = prompt(`Digite o nome do aluno ${i + 1}:`);
+        const notasAluno = [];
+        const quantidadeNotas = parseInt(prompt(`Quantas notas o aluno ${nomeAluno} possui?`));
+
+        for (let j = 0; j < quantidadeNotas; j++) {
+            const nota = parseFloat(prompt(`Digite a nota ${j + 1} do aluno ${nomeAluno}:`));
+            notasAluno.push(nota);
+        }
+
+        const mediaAluno = calcularMedia(notasAluno);
+        const classificacaoAluno = classificarAluno(mediaAluno);
+
+        alunos.push({ nome: nomeAluno, notas: notasAluno, media: mediaAluno, classificacao: classificacaoAluno });
+    }
+
+    // Exibir o resultado
+    console.log("Média das notas dos alunos:");
+    alunos.forEach(aluno => {
+        console.log(`${aluno.nome}: ${aluno.media.toFixed(2)} - ${aluno.classificacao}`);
+    });
+</script>
+
+</body>
+</html>
